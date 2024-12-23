@@ -28,7 +28,7 @@ Spring Boot API Project Seed is a seed project based on Spring Boot & MyBatis. I
 - 建议业务失败直接使用```ServiceException("message")```抛出，由统一异常处理器来封装业务失败的响应结果，比如```throw new ServiceException("该手机号已被注册")```，会直接被封装为```{"code":400,"message":"该手机号已被注册"}```返回，无需自己处理，尽情抛出
 - 需要工具类的话建议先从```apache-commons-*```和```guava```中找，实在没有再造轮子或引入类库，尽量精简项目
 
- 
+ test
 ## 技术选型&文档
 - Spring Boot
 - MyBatis
