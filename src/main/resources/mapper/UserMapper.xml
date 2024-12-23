@@ -12,4 +12,9 @@
     <result column="sex" jdbcType="INTEGER" property="sex" />
     <result column="register_date" jdbcType="TIMESTAMP" property="registerDate" />
   </resultMap>
+  
+  <insert id="insertUser" parameterType="com.company.project.model.User">
+    INSERT INTO users (username, password, nick_name, sex, register_date)
+    VALUES (#{username}, #{password}, #{nickName}, #{sex}, #{registerDate})
+  </insert>
 </mapper>

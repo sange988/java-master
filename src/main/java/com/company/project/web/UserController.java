@@ -22,6 +22,9 @@ public class UserController {
 
     @PostMapping("/add")
     public Result add(@RequestBody User user) {
+        if (user == null) {
+            return ResultGenerator.genFailResult("User data must not be null");
+        }
         userService.save(user);
         return ResultGenerator.genSuccessResult();
     }
