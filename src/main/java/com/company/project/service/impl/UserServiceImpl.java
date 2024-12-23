@@ -21,6 +21,9 @@ public class UserServiceImpl extends AbstractService<User> implements UserServic
     private UserMapper userMapper;
 
     public void addUser(User user) {
+        if (user == null || user.getUsername() == null || user.getPassword() == null) {
+            throw new IllegalArgumentException("User data is incomplete");
+        }
         user.setRegisterDate(new java.util.Date());
         String encryptedPassword = encryptPassword(user.getPassword());
         user.setPassword(encryptedPassword);
