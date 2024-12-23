@@ -1,3 +1,17 @@
-
 /target/
 src/main/resources/application-localhost.properties
+
+
+# Clacky-related configuration
+.1024*
+!.1024
+.breakpoints
+
+# Language-specific files
+# (Add language-specific files here)
+
+# Framework-related files
+# (Add framework-related files here)
+
+# Package manager directories
+# (Add package manager directories here)

@@ -8,6 +8,6 @@ public class HomeController {
 
     @RequestMapping("/")
     public String welcome() {
-        return "Welcome to the Home Page!";
+        return "This is what was modified by the manual append step";
     }
 }
